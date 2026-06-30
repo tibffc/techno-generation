@@ -1,0 +1,54 @@
+# -*- coding: utf-8 -*-
+
+# Python runtime
+.venv/
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+
+# Git / editor noise
+.DS_Store
+Thumbs.db
+
+# Heavy backend checkout and weights
+external/ACE-Step-1.5/
+models/
+
+# Raw and processed audio data
+data/dirty_data/
+data/raw_clean/
+data/processed/
+
+# Heavy training artifacts
+outputs/tensors/
+outputs/checkpoints/
+outputs/samples/
+
+# Audio files anywhere in the repo
+*.mp3
+*.wav
+*.flac
+*.ogg
+*.m4a
+*.aac
+*.aiff
+*.opus
+
+# Model weights anywhere in the repo
+*.safetensors
+*.pt
+*.bin
+*.ckpt
+
+# Keep lightweight outputs and reports
+!outputs/logs/
+!outputs/logs/**
+!outputs/evaluation/
+!outputs/evaluation/**
+!outputs/manifests/
+!outputs/manifests/**
+
+# Keep metadata artifacts
+!data/metadata.csv
+!data/metadata_features.csv
+!data/metadata_quality_report.json

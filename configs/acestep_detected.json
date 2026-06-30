@@ -1,0 +1,444 @@
+{
+  "backend_name": "ace-step-1.5",
+  "repo_path": "C:/Users/Craftic/Desktop/deep-learning-project/external/ACE-Step-1.5",
+  "repo_exists": true,
+  "clone_instruction": "git clone https://github.com/ace-step/ACE-Step-1.5 external/ACE-Step-1.5",
+  "weights_path": "C:/Users/Craftic/Desktop/deep-learning-project/external/ACE-Step-1.5/checkpoints",
+  "weights_exist": true,
+  "weights_instruction": "Run `cd external/ACE-Step-1.5` and `uv run acestep-download` to populate external/ACE-Step-1.5/checkpoints",
+  "install_files": {
+    "pyproject_toml": true,
+    "requirements_txt": true,
+    "setup_py": false
+  },
+  "docs": {
+    "lora_training_tutorial": true,
+    "sidestep_training_guide": true,
+    "sidestep_dataset_preparation": true
+  },
+  "entrypoints": {
+    "training_candidates": [
+      {
+        "path": ".venv/Lib/site-packages/accelerate/test_utils/training.py",
+        "reason": "filename matches train*.py"
+      },
+      {
+        "path": ".venv/Lib/site-packages/diffusers/training_utils.py",
+        "reason": "filename matches train*.py"
+      },
+      {
+        "path": ".venv/Lib/site-packages/lightning/pytorch/loops/training_epoch_loop.py",
+        "reason": "filename matches train*.py"
+      },
+      {
+        "path": ".venv/Lib/site-packages/lightning/pytorch/trainer/trainer.py",
+        "reason": "filename matches train*.py"
+      },
+      {
+        "path": ".venv/Lib/site-packages/modelscope/models/nlp/mglm/train_utils.py",
+        "reason": "filename matches train*.py"
+      },
+      {
+        "path": ".venv/Lib/site-packages/modelscope/tools/train.py",
+        "reason": "filename matches train*.py"
+      },
+      {
+        "path": ".venv/Lib/site-packages/modelscope/trainers/trainer.py",
+        "reason": "filename matches train*.py"
+      },
+      {
+        "path": ".venv/Lib/site-packages/modelscope/trainers/training_args.py",
+        "reason": "filename matches train*.py"
+      },
+      {
+        "path": ".venv/Lib/site-packages/pytorch_lightning/loops/training_epoch_loop.py",
+        "reason": "filename matches train*.py"
+      },
+      {
+        "path": ".venv/Lib/site-packages/pytorch_lightning/trainer/trainer.py",
+        "reason": "filename matches train*.py"
+      },
+      {
+        "path": ".venv/Lib/site-packages/torchao/prototype/paretoq/train.py",
+        "reason": "filename matches train*.py"
+      },
+      {
+        "path": ".venv/Lib/site-packages/transformers/commands/train.py",
+        "reason": "filename matches train*.py"
+      },
+      {
+        "path": ".venv/Lib/site-packages/transformers/sagemaker/trainer_sm.py",
+        "reason": "filename matches train*.py"
+      },
+      {
+        "path": ".venv/Lib/site-packages/transformers/sagemaker/training_args_sm.py",
+        "reason": "filename matches train*.py"
+      },
+      {
+        "path": ".venv/Lib/site-packages/transformers/trainer.py",
+        "reason": "filename matches train*.py"
+      },
+      {
+        "path": ".venv/Lib/site-packages/transformers/trainer_callback.py",
+        "reason": "filename matches train*.py"
+      },
+      {
+        "path": ".venv/Lib/site-packages/transformers/trainer_pt_utils.py",
+        "reason": "filename matches train*.py"
+      },
+      {
+        "path": ".venv/Lib/site-packages/transformers/trainer_seq2seq.py",
+        "reason": "filename matches train*.py"
+      },
+      {
+        "path": ".venv/Lib/site-packages/transformers/trainer_utils.py",
+        "reason": "filename matches train*.py"
+      },
+      {
+        "path": ".venv/Lib/site-packages/transformers/training_args.py",
+        "reason": "filename matches train*.py"
+      },
+      {
+        "path": ".venv/Lib/site-packages/transformers/training_args_seq2seq.py",
+        "reason": "filename matches train*.py"
+      },
+      {
+        "path": ".venv/Lib/site-packages/transformers/training_args_tf.py",
+        "reason": "filename matches train*.py"
+      },
+      {
+        "path": "acestep/api/train_api_dataset_auto_label_async_route.py",
+        "reason": "filename matches train*.py"
+      },
+      {
+        "path": "acestep/api/train_api_dataset_auto_label_routes.py",
+        "reason": "filename matches train*.py"
+      },
+      {
+        "path": "acestep/api/train_api_dataset_auto_label_routes_http_test.py",
+        "reason": "filename matches train*.py"
+      },
+      {
+        "path": "acestep/api/train_api_dataset_auto_label_status_route.py",
+        "reason": "filename matches train*.py"
+      },
+      {
+        "path": "acestep/api/train_api_dataset_auto_label_sync_route.py",
+        "reason": "filename matches train*.py"
+      },
+      {
+        "path": "acestep/api/train_api_dataset_models.py",
+        "reason": "filename matches train*.py"
+      },
+      {
+        "path": "acestep/api/train_api_dataset_models_test.py",
+        "reason": "filename matches train*.py"
+      },
+      {
+        "path": "acestep/api/train_api_dataset_preprocess_routes.py",
+        "reason": "filename matches train*.py"
+      },
+      {
+        "path": "acestep/api/train_api_dataset_preprocess_routes_http_test.py",
+        "reason": "filename matches train*.py"
+      },
+      {
+        "path": "acestep/api/train_api_dataset_sample_routes.py",
+        "reason": "filename matches train*.py"
+      },
+      {
+        "path": "acestep/api/train_api_dataset_sample_routes_http_test.py",
+        "reason": "filename matches train*.py"
+      },
+      {
+        "path": "acestep/api/train_api_dataset_scan_load_routes.py",
+        "reason": "filename matches train*.py"
+      },
+      {
+        "path": "acestep/api/train_api_dataset_scan_load_routes_http_test.py",
+        "reason": "filename matches train*.py"
+      },
+      {
+        "path": "acestep/api/train_api_dataset_service.py",
+        "reason": "filename matches train*.py"
+      },
+      {
+        "path": "acestep/api/train_api_dataset_service_http_test.py",
+        "reason": "filename matches train*.py"
+      },
+      {
+        "path": "acestep/api/train_api_dataset_status_routes.py",
+        "reason": "filename matches train*.py"
+      },
+      {
+        "path": "acestep/api/train_api_dataset_status_routes_http_test.py",
+        "reason": "filename matches train*.py"
+      },
+      {
+        "path": "acestep/api/train_api_lokr_start_route.py",
+        "reason": "filename matches train*.py"
+      },
+      {
+        "path": "acestep/api/train_api_lora_start_route.py",
+        "reason": "filename matches train*.py"
+      },
+      {
+        "path": "acestep/api/train_api_models.py",
+        "reason": "filename matches train*.py"
+      },
+      {
+        "path": "acestep/api/train_api_runtime.py",
+        "reason": "filename matches train*.py"
+      },
+      {
+        "path": "acestep/api/train_api_service.py",
+        "reason": "filename matches train*.py"
+      },
+      {
+        "path": "acestep/api/train_api_service_http_test.py",
+        "reason": "filename matches train*.py"
+      },
+      {
+        "path": "acestep/core/generation/handler/training_preset.py",
+        "reason": "filename matches train*.py"
+      },
+      {
+        "path": "acestep/core/generation/handler/training_preset_test.py",
+        "reason": "filename matches train*.py"
+      },
+      {
+        "path": "acestep/training/trainer.py",
+        "reason": "filename matches train*.py"
+      },
+      {
+        "path": "acestep/training_v2/cli/train_fixed.py",
+        "reason": "filename matches train*.py"
+      },
+      {
+        "path": "acestep/training_v2/cli/train_fixed_standalone_test.py",
+        "reason": "filename matches train*.py"
+      },
+      {
+        "path": "acestep/training_v2/cli/train_vanilla.py",
+        "reason": "filename matches train*.py"
+      },
+      {
+        "path": "acestep/training_v2/trainer_basic_loop.py",
+        "reason": "filename matches train*.py"
+      },
+      {
+        "path": "acestep/training_v2/trainer_fixed.py",
+        "reason": "filename matches train*.py"
+      },
+      {
+        "path": "acestep/training_v2/trainer_helpers.py",
+        "reason": "filename matches train*.py"
+      },
+      {
+        "path": "acestep/training_v2/trainer_helpers_test.py",
+        "reason": "filename matches train*.py"
+      },
+      {
+        "path": "acestep/training_v2/trainer_vanilla.py",
+        "reason": "filename matches train*.py"
+      },
+      {
+        "path": "acestep/ui/gradio/events/training/training_facade_test.py",
+        "reason": "filename matches train*.py"
+      },
+      {
+        "path": "acestep/ui/gradio/events/training/training_utils.py",
+        "reason": "filename matches train*.py"
+      },
+      {
+        "path": "acestep/ui/gradio/events/training/training_utils_test.py",
+        "reason": "filename matches train*.py"
+      },
+      {
+        "path": "acestep/ui/gradio/events/training_handlers.py",
+        "reason": "filename matches train*.py"
+      },
+      {
+        "path": "acestep/ui/gradio/events/wiring/training_dataset_builder_wiring.py",
+        "reason": "filename matches train*.py"
+      },
+      {
+        "path": "acestep/ui/gradio/events/wiring/training_dataset_preprocess_wiring.py",
+        "reason": "filename matches train*.py"
+      },
+      {
+        "path": "acestep/ui/gradio/events/wiring/training_lokr_wiring.py",
+        "reason": "filename matches train*.py"
+      },
+      {
+        "path": "acestep/ui/gradio/events/wiring/training_run_wiring.py",
+        "reason": "filename matches train*.py"
+      },
+      {
+        "path": "acestep/ui/gradio/interfaces/training.py",
+        "reason": "filename matches train*.py"
+      },
+      {
+        "path": "acestep/ui/gradio/interfaces/training_contract_ast_utils.py",
+        "reason": "filename matches train*.py"
+      },
+      {
+        "path": "acestep/ui/gradio/interfaces/training_dataset_builder_tab.py",
+        "reason": "filename matches train*.py"
+      },
+      {
+        "path": "acestep/ui/gradio/interfaces/training_dataset_tab_label_preview.py",
+        "reason": "filename matches train*.py"
+      },
+      {
+        "path": "acestep/ui/gradio/interfaces/training_dataset_tab_save_preprocess.py",
+        "reason": "filename matches train*.py"
+      },
+      {
+        "path": "acestep/ui/gradio/interfaces/training_dataset_tab_scan_settings.py",
+        "reason": "filename matches train*.py"
+      },
+      {
+        "path": "acestep/ui/gradio/interfaces/training_decomposition_contract_test.py",
+        "reason": "filename matches train*.py"
+      },
+      {
+        "path": "acestep/ui/gradio/interfaces/training_lokr_tab.py",
+        "reason": "filename matches train*.py"
+      },
+      {
+        "path": "acestep/ui/gradio/interfaces/training_lokr_tab_dataset.py",
+        "reason": "filename matches train*.py"
+      },
+      {
+        "path": "acestep/ui/gradio/interfaces/training_lokr_tab_run_export.py",
+        "reason": "filename matches train*.py"
+      },
+      {
+        "path": "acestep/ui/gradio/interfaces/training_lora_tab.py",
+        "reason": "filename matches train*.py"
+      },
+      {
+        "path": "acestep/ui/gradio/interfaces/training_lora_tab_dataset.py",
+        "reason": "filename matches train*.py"
+      },
+      {
+        "path": "acestep/ui/gradio/interfaces/training_lora_tab_run_export.py",
+        "reason": "filename matches train*.py"
+      },
+      {
+        "path": "train.py",
+        "reason": "filename matches train*.py"
+      },
+      {
+        "path": ".venv/Lib/site-packages/diffusers/loaders/lora_base.py",
+        "reason": "filename contains lora"
+      },
+      {
+        "path": ".venv/Lib/site-packages/diffusers/loaders/lora_conversion_utils.py",
+        "reason": "filename contains lora"
+      },
+      {
+        "path": ".venv/Lib/site-packages/diffusers/loaders/lora_pipeline.py",
+        "reason": "filename contains lora"
+      },
+      {
+        "path": ".venv/Lib/site-packages/diffusers/models/lora.py",
+        "reason": "filename contains lora"
+      },
+      {
+        "path": ".venv/Lib/site-packages/loguru/_colorama.py",
+        "reason": "filename contains lora"
+      },
+      {
+        "path": ".venv/Lib/site-packages/lycoris/modules/dylora.py",
+        "reason": "filename contains lora"
+      },
+      {
+        "path": ".venv/Lib/site-packages/lycoris/modules/glora.py",
+        "reason": "filename contains lora"
+      },
+      {
+        "path": ".venv/Lib/site-packages/modelscope/models/multi_modal/efficient_diffusion_tuning/control_sd_lora.py",
+        "reason": "filename contains lora"
+      },
+      {
+        "path": ".venv/Lib/site-packages/modelscope/models/multi_modal/efficient_diffusion_tuning/sd_lora.py",
+        "reason": "filename contains lora"
+      },
+      {
+        "path": ".venv/Lib/site-packages/modelscope/trainers/multi_modal/lora_diffusion/lora_diffusion_trainer.py",
+        "reason": "filename contains lora"
+      },
+      {
+        "path": ".venv/Lib/site-packages/modelscope/trainers/multi_modal/lora_diffusion_xl/lora_diffusion_xl_trainer.py",
+        "reason": "filename contains lora"
+      },
+      {
+        "path": ".venv/Lib/site-packages/peft/optimizers/lorafa.py",
+        "reason": "filename contains lora"
+      },
+      {
+        "path": ".venv/Lib/site-packages/peft/optimizers/loraplus.py",
+        "reason": "filename contains lora"
+      },
+      {
+        "path": ".venv/Lib/site-packages/peft/tuners/lora/loraga.py",
+        "reason": "filename contains lora"
+      },
+      {
+        "path": "acestep/api/http/lora_routes.py",
+        "reason": "filename contains lora"
+      },
+      {
+        "path": "acestep/api/http/lora_routes_http_test.py",
+        "reason": "filename contains lora"
+      },
+      {
+        "path": "acestep/api/http/lora_routes_test.py",
+        "reason": "filename contains lora"
+      },
+      {
+        "path": "acestep/core/generation/handler/lora_integration_test.py",
+        "reason": "filename contains lora"
+      },
+      {
+        "path": "acestep/core/generation/handler/lora_manager.py",
+        "reason": "filename contains lora"
+      },
+      {
+        "path": "acestep/training/lora_checkpoint.py",
+        "reason": "filename contains lora"
+      },
+      {
+        "path": "acestep/training/lora_injection.py",
+        "reason": "filename contains lora"
+      },
+      {
+        "path": "acestep/training/lora_utils.py",
+        "reason": "filename contains lora"
+      },
+      {
+        "path": "acestep/training/test_lora_utils.py",
+        "reason": "filename contains lora"
+      },
+      {
+        "path": "acestep/training_v2/fixed_lora_module.py",
+        "reason": "filename contains lora"
+      },
+      {
+        "path": "acestep/ui/gradio/events/training/lora_training.py",
+        "reason": "filename contains lora"
+      }
+    ],
+    "cli_scripts": {
+      "acestep": "acestep.acestep_v15_pipeline:main",
+      "acestep-api": "acestep.api_server:main",
+      "acestep-download": "acestep.model_downloader:main",
+      "acestep-openrouter": "openrouter.openrouter_api_server:main"
+    },
+    "recommended_python_executable": "C:/Users/Craftic/Desktop/deep-learning-project/external/ACE-Step-1.5/.venv/Scripts/python.exe",
+    "uv_available_in_path": true
+  },
+  "manual_steps": []
+}

@@ -1,0 +1,43 @@
+seed: 42
+
+clean_dataset:
+  input_dir: dirty_data
+  output_dir: data/raw_mp3
+  output_format: mp3
+  sample_rate: 44100
+  channels: 2
+  bitrate: 320k
+  min_duration_seconds: 30.0
+  supported_extensions:
+    - .mp3
+    - .wav
+    - .flac
+    - .m4a
+    - .aac
+    - .ogg
+    - .aiff
+    - .aif
+    - .opus
+
+prepare_dataset:
+  input_dir: data/raw_mp3
+  output_dir: data/processed
+  sample_rate: 44100
+  channels: 2
+  chunk_seconds: 30.0
+  overlap_seconds: 5.0
+  min_duration_seconds: 30.0
+  target_lufs: -14.0
+  output_format: flac
+  metadata_path: data/processed/metadata.csv
+
+metadata:
+  input_dir: data/processed
+  metadata_out: data/metadata.csv
+  features_out: data/metadata_features.csv
+  split_ratios:
+    train: 0.90
+    val: 0.05
+    test: 0.05
+  clusters: 4
+  prompt_generic: "techno music, electronic music"

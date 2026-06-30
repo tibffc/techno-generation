@@ -1,0 +1,50 @@
+seed: 42
+
+model:
+  foundation_name: "ACE-Step 1.5"
+  default_duration_seconds: 60
+  sample_rate: 44100
+
+training:
+  metadata_path: "data/metadata.csv"
+  processed_dir: "data/processed"
+  output_root: "outputs/latest/checkpoints"
+  batch_size: 1
+  gradient_accumulation_steps: 16
+  learning_rate: 0.00001
+  epochs: 1
+  max_train_steps: 64
+  mixed_precision: "bf16"
+  lora_rank: 4
+  lora_alpha: 16
+  lora_dropout: 0.05
+  save_every: 100
+  save_every_n_epochs: 1
+  num_workers: 2
+  optimizer_type: "adamw"
+  offload_encoder: false
+  max_duration_seconds: 60
+  seed: 42
+
+prompts:
+  generic_column: "prompt_generic"
+  features_column: "prompt_features"
+
+variants:
+  base:
+    lora_path: null
+    output_dir: "outputs/latest/generated"
+  lora_generic:
+    lora_path: "outputs/latest/checkpoints/generic/latest"
+    output_dir: "outputs/latest/generated"
+  lora_features:
+    lora_path: "outputs/latest/checkpoints/features/latest"
+    output_dir: "outputs/latest/generated"
+
+backend:
+  name: "ace-step-1.5"
+  model_variant: "turbo"
+  device: "cuda"
+  manifests_root: "outputs/latest/manifests"
+  tensor_output_root: "outputs/latest/tensors"
+  prompt_column: "prompt_features"
